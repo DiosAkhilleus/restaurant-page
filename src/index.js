@@ -1,1 +1,1 @@
-alert("Webpack Connect");
+console.log("Webpack Connected");
