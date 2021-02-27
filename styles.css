@@ -1,0 +1,24 @@
+body {
+    min-height:100vh;
+    min-width:100%;
+    padding:none;
+    margin:0;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+}
+header {
+    color: indianred;
+    background-color: lightblue;
+    padding:none;
+    text-align:center;
+    height:75px;
+    line-height:75px;
+    font-size:30px;
+}
+main {
+    background-color:lemonchiffon;
+}
+footer {
+    background-color: lightgreen;
+    height:40px;
+}
