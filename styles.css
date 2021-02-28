@@ -20,6 +20,7 @@ body {
     line-height:60px;
     font-size:30px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 #headline {
     /* margin:auto; */
@@ -29,6 +30,20 @@ body {
     height:40px;
     line-height:40px;
 }
+.tabButton {
+    background-color:rgb(70, 70, 70);
+    height:100%;
+    width:10%;
+    text-align:center;
+    user-select: none;
+    text-decoration: none;
+    color:white;
+    float:left
+}
+.tabButton:hover {
+    background-color:rgb(157, 157, 157);
+    cursor:pointer;
+}
 .header-nav {
     background-color:rgb(70, 70, 70);
     height:100%;
@@ -37,7 +52,7 @@ body {
     user-select: none;
     text-decoration: none;
     color:white;
-    float:left;
+    float:left
 }
 .header-nav:hover {
     background-color:rgb(157, 157, 157);
@@ -60,7 +75,7 @@ body {
     background-color:rgb(100, 0, 0);
     cursor:pointer;
 }
-#about {
+#tabRight {
     float:right;
 }
 #main {
@@ -94,4 +109,10 @@ img {
     border-style:solid;
     border-width:3px;
     border-color:white;
+}
+input[type='radio'] {
+    display:none;
+}
+input[type='radio']:checked + label {
+    background-color:rgb(138, 102, 102);
 }
