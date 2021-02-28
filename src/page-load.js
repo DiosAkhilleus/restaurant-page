@@ -3,12 +3,16 @@ const pageLoad = () => { //loads all html elements into the content div of index
     let header = document.createElement('nav');
         let home = document.createElement('input');
             let homeLabel = document.createElement('label');
+                let contHome = document.createElement('div');
         let menu = document.createElement('input');
             let menuLabel = document.createElement('label');
+                let contMenu = document.createElement('div');
         let contact = document.createElement('input');
             let contactLabel = document.createElement('label');
+                let contContact = document.createElement('div');
         let about = document.createElement('input');
             let aboutLabel = document.createElement('label');
+                let contAbout = document.createElement('div');
 
     let tab = document.createElement('div');
 
@@ -37,7 +41,9 @@ const pageLoad = () => { //loads all html elements into the content div of index
                     home.innerHTML = 'Home';
         homeLabel.setAttribute('class', 'tabButton');
             homeLabel.setAttribute('for', 'tab1');
-                homeLabel.innerHTML = 'Home';
+                homeLabel.setAttribute('id', 'tabHome');
+                    homeLabel.innerHTML = 'Home';
+        tab.setAttribute('class', 'tab');
     menu.setAttribute('class', 'header-nav');
         menu.setAttribute('type', 'radio');
             menu.setAttribute('id', 'tab2');
@@ -45,7 +51,8 @@ const pageLoad = () => { //loads all html elements into the content div of index
                     menu.innerHTML = 'Menu';
         menuLabel.setAttribute('class', 'tabButton');
             menuLabel.setAttribute('for', 'tab2');
-                menuLabel.innerHTML = 'Menu';
+                menuLabel.setAttribute('id', 'tabMenu');
+                    menuLabel.innerHTML = 'Menu';
     contact.setAttribute('class', 'header-nav');
         contact.setAttribute('type', 'radio');
             contact.setAttribute('id', 'tab3')
@@ -53,7 +60,8 @@ const pageLoad = () => { //loads all html elements into the content div of index
                     contact.innerHTML = 'Contact';
             contactLabel.setAttribute('class', 'tabButton');
                 contactLabel.setAttribute('for', 'tab3');
-                    contactLabel.innerHTML = 'Contact';  
+                    contactLabel.setAttribute('id', 'tabContact');
+                        contactLabel.innerHTML = 'Contact';  
     about.setAttribute('class', 'header-nav');
         about.setAttribute('id', 'tab4');
             about.setAttribute('type', 'radio');
@@ -62,7 +70,7 @@ const pageLoad = () => { //loads all html elements into the content div of index
             aboutLabel.setAttribute('class', 'tabButton');
                 aboutLabel.setAttribute('for', 'tab4');
                     aboutLabel.setAttribute('id', 'tabRight');
-                    aboutLabel.innerHTML = 'About';
+                        aboutLabel.innerHTML = 'About';
 
     jobs.setAttribute('class', 'footer-nav');
         jobs.innerHTML = 'Jobs';
@@ -74,13 +82,16 @@ const pageLoad = () => { //loads all html elements into the content div of index
     main.after(footer);
 
     header.appendChild(home);
-    home.after(homeLabel);
-    homeLabel.after(menu);
-    menu.after(menuLabel);
+        home.after(homeLabel);
+            homeLabel.after(tab);
+                tab.appendChild(cont);
+                tab.after(menu);
+                    
+        menu.after(menuLabel);
     menuLabel.after(contact);
-    contact.after(contactLabel);
+        contact.after(contactLabel);
     contactLabel.after(about)
-    about.after(aboutLabel);
+        about.after(aboutLabel);
 
     main.appendChild(title);
     title.after(img);
