@@ -1,1 +1,1 @@
-console.log("Webpack Connected");
+(()=>{"use strict";console.log("Webpack Connected"),window.addEventListener("load",(()=>{let e=document.getElementById("content"),t=document.createElement("div"),d=document.createElement("div"),n=document.createElement("div");t.setAttribute("id","header"),d.setAttribute("id","main"),n.setAttribute("id","footer"),e.appendChild(t),t.after(d),d.after(n),console.log("pageLoad?")}))})();
