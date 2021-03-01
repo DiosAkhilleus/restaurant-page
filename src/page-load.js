@@ -84,10 +84,12 @@ const pageLoad = () => { //loads all html elements into the content div of index
 
 const createTabs = () => {
     let img = document.createElement('img');
+    let img2 = document.createElement('img');
     let title = document.createElement('h1');
         title.setAttribute('id', 'title');
-        title.innerHTML = 'Podarkes BBQ';
+        title.innerHTML = 'Akhos BBQ';
         img.setAttribute('src', 'https://i.ibb.co/mThJR2V/BBQ-Photo.png');
+        img2.setAttribute('src', 'https://i.ibb.co/HzLKMY4/menu.png');
     let tabHome = document.createElement('div');
         tabHome.setAttribute('id', 'tab1');
         tabHome.setAttribute('class', 'tabDisp');
@@ -101,6 +103,7 @@ const createTabs = () => {
         tabMenu.setAttribute('id', 'tab2');
         tabMenu.setAttribute('class', 'tabDisp');
         tabMenu.appendChild(menuTitle);
+        menuTitle.after(img2);
     
     let contactTitle = document.createElement('h1');
         contactTitle.setAttribute('id', 'title');
