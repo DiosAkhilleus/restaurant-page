@@ -90,6 +90,7 @@ const createTabs = () => {
         title.innerHTML = 'Akhos BBQ';
         img.setAttribute('src', 'https://i.ibb.co/mThJR2V/BBQ-Photo.png');
         img2.setAttribute('src', 'https://i.ibb.co/HzLKMY4/menu.png');
+        img2.setAttribute('id', 'img2');
     let tabHome = document.createElement('div');
         tabHome.setAttribute('id', 'tab1');
         tabHome.setAttribute('class', 'tabDisp');
@@ -121,11 +122,15 @@ const createTabs = () => {
         tabAbout.setAttribute('class', 'tabDisp');
         tabAbout.appendChild(aboutTitle);
 
-        header.after(tabHome);
-        header.after(tabMenu);
-        header.after(tabContact);
-        header.after(tabAbout);
-}
+        // header.after(tabHome);
+        // header.after(tabMenu);
+        // header.after(tabContact);
+        // header.after(tabAbout);
+        document.getElementById('main').appendChild(tabHome);
+        document.getElementById('main').appendChild(tabMenu);
+        document.getElementById('main').appendChild(tabContact);
+        document.getElementById('main').appendChild(tabAbout);
+    }
 
 const setTabs = () => {
     document.getElementById('1').addEventListener('click', set);
