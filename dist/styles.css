@@ -15,15 +15,12 @@ body {
     color: white;
     background-color:rgb(70, 70, 70);
     padding:none;
-    /* text-align:center; */
     height:60px;
     line-height:60px;
     font-size:30px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
 }
 #headline {
-    /* margin:auto; */
     text-align:center;
     font-size:30px;
     background-color:rgb(70, 70, 70);
@@ -78,11 +75,7 @@ body {
 #tabRight {
     float:right;
 }
-#main {
-    background-color:rgb(24, 17, 17);
-    /* background-image: url('https://jesspryles.com/wp-content/uploads/2020/12/pork-belly-sliders-1440x900.jpg'); */
-    background-position: 15%;
-}
+
 #title {
     color:white; 
     text-align: center;
@@ -121,7 +114,6 @@ input[type='radio']:checked + label {
     display:block;
     background-color:rgb(24, 17, 17);
     background-position: 15%;
-    
 }
 
 #tab2, #tab3, #tab4 {
