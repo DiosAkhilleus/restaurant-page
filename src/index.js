@@ -1,14 +1,13 @@
 
 import { createTabs, pageLoad, setTabs } from './page-load';
-console.log("Webpack Connected");
+console.log("Connected");
 
 window.addEventListener('load', loadAll);
-window.addEventListener('load')
 
 function loadAll() {
     pageLoad();
     createTabs();
-    check()
+    check();
     setTabs();
 }
 

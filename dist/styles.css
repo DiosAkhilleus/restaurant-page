@@ -120,7 +120,6 @@ input[type='radio']:checked + label {
 #tab1 {
     display:block;
     background-color:rgb(24, 17, 17);
-    /* background-image: url('https://jesspryles.com/wp-content/uploads/2020/12/pork-belly-sliders-1440x900.jpg'); */
     background-position: 15%;
     
 }
@@ -128,6 +127,5 @@ input[type='radio']:checked + label {
 #tab2, #tab3, #tab4 {
     display:none;
     background-color:rgb(24, 17, 17);
-    /* background-image: url('https://jesspryles.com/wp-content/uploads/2020/12/pork-belly-sliders-1440x900.jpg'); */
     background-position: 15%;
 }

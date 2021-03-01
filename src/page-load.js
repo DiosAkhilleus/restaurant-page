@@ -11,21 +11,14 @@ const pageLoad = () => { //loads all html elements into the content div of index
             let aboutLabel = document.createElement('label');
                 
     let main = document.createElement('div');
-        
-        let img = document.createElement('img');
 
     let footer = document.createElement('div');
         let jobs = document.createElement('a');
         let services = document.createElement('a');
-
-    
-
     
     header.setAttribute('id', 'header');
     main.setAttribute('id', 'main');
     footer.setAttribute('id', 'footer');
-
-    img.setAttribute('src', 'https://jesspryles.com/wp-content/uploads/2020/12/pork-belly-sliders-1440x900.jpg')
 
     home.setAttribute('class', 'header-nav');
         home.setAttribute('type', 'radio');
@@ -85,13 +78,8 @@ const pageLoad = () => { //loads all html elements into the content div of index
     contactLabel.after(about);
         about.after(aboutLabel);
 
-    
-
     footer.appendChild(jobs);
     jobs.after(services);
-    
-
-    console.log("pageLoad?");
 }
 
 const createTabs = () => {
@@ -105,7 +93,6 @@ const createTabs = () => {
         tabHome.setAttribute('class', 'tabDisp');
         tabHome.appendChild(title);
         title.after(img);
-
 
     let menuTitle = document.createElement('h1');
         menuTitle.setAttribute('id', 'title');
@@ -135,13 +122,9 @@ const createTabs = () => {
         header.after(tabMenu);
         header.after(tabContact);
         header.after(tabAbout);
-
-
 }
 
 const setTabs = () => {
-    let head = document.getElementById('header');
-    let foot = document.getElementById('footer');
     document.getElementById('1').addEventListener('click', set);
     document.getElementById('2').addEventListener('click', set);
     document.getElementById('3').addEventListener('click', set);
@@ -155,38 +138,7 @@ const setTabs = () => {
             tabs[i].style.display = 'none';
         }
         document.getElementById(`tab${targ}`).style.display = 'block';
-        
     }
-
 }
 
-
-
-
-
 export {  pageLoad, createTabs, setTabs  };
-
-/* <div class="tabsy">
-    <input type="radio" id="tab1" name="tab" checked>
-    <label class="tabButton" for="tab1">Tab One</label>
-    <div class="tab">
-    	<div class="content">
-    		Content One
-    	</div>
-    </div>
-    <input type="radio" id="tab2" name="tab" checked>
-    <label class="tabButton" for="tab2">Tab Two</label>
-    <div class="tab">
-    	<div class="content">
-    		Content Two
-    	</div>
-    </div>
-    <input type="radio" id="tab3" name="tab" checked>
-    <label class="tabButton" for="tab3">Tab Three</label>
-    <div class="tab">
-    	<div class="content">
-    		Content Three
-    	</div>
-    </div>
-</div>
- */
