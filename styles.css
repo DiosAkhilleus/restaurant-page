@@ -58,6 +58,11 @@ body {
 .header-nav:visited{
     color:white;
 }
+#footer {
+    position:fixed;
+    width:100%;
+    bottom:0;
+}
 .footer-nav {
     background-color: rgb(72, 0, 0);
     height:100%;
