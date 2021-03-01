@@ -87,7 +87,7 @@ const createTabs = () => {
     let title = document.createElement('h1');
         title.setAttribute('id', 'title');
         title.innerHTML = 'Podarkes BBQ';
-        img.setAttribute('src', 'https://jesspryles.com/wp-content/uploads/2020/12/pork-belly-sliders-1440x900.jpg');
+        img.setAttribute('src', 'https://i.ibb.co/mThJR2V/BBQ-Photo.png');
     let tabHome = document.createElement('div');
         tabHome.setAttribute('id', 'tab1');
         tabHome.setAttribute('class', 'tabDisp');
