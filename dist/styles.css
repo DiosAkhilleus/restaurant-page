@@ -158,7 +158,7 @@ input[type='radio']:checked + label {
     background-position: 15%;
     padding-bottom:100px;
     /* padding-top:100px; */
-    min-height:84%;
+    min-height:86%;
 }
 
 #tab2, #tab3, #tab4 {
@@ -167,5 +167,5 @@ input[type='radio']:checked + label {
     background-position: 15%;
     padding-bottom:100px;
     /* padding-top:100px; */
-    min-height:84%;
+    min-height:86%;
 }
