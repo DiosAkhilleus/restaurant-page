@@ -86,7 +86,7 @@ body {
     float:right;
     position:absolute;
     top:0;
-    right:0;
+    right:30px;
     height:60px;
     min-width:100px;
 }
