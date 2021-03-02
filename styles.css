@@ -118,9 +118,32 @@ img {
     border-width:3px;
     border-color:white;
 }
+
 #img2 {
     width:75%;
     height:auto;
+}
+
+#subtext {
+    margin: auto;
+    color:white;
+    padding-top:20px;
+    text-align:center;
+}
+#details {
+    margin: auto;
+    color:white;
+    text-align:left;
+    font-size: 30px;
+    max-width:400px;
+}
+#aboutText {
+    margin: auto;
+    color:white;
+    text-align:left;
+    font-size: 30px;
+    max-width:500px;
+    padding-top:30px;
 }
 input[type='radio'] {
     display:none;
@@ -135,7 +158,7 @@ input[type='radio']:checked + label {
     background-position: 15%;
     padding-bottom:100px;
     /* padding-top:100px; */
-    min-height:80%;
+    min-height:84%;
 }
 
 #tab2, #tab3, #tab4 {
@@ -144,5 +167,5 @@ input[type='radio']:checked + label {
     background-position: 15%;
     padding-bottom:100px;
     /* padding-top:100px; */
-    min-height:80%;
+    min-height:84%;
 }
