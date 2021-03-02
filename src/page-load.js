@@ -47,7 +47,7 @@ const pageLoad = () => { //loads all html elements into the content div of index
                     contact.innerHTML = 'Contact';
             contactLabel.setAttribute('class', 'tabButton');
                 contactLabel.setAttribute('for', '3');
-                    contactLabel.setAttribute('id', 'tabContact');
+                    contactLabel.setAttribute('id', 'tabRight');
                         contactLabel.innerHTML = 'Contact';  
 
     about.setAttribute('class', 'header-nav');
@@ -57,7 +57,7 @@ const pageLoad = () => { //loads all html elements into the content div of index
                     about.innerHTML = 'About';
             aboutLabel.setAttribute('class', 'tabButton');
                 aboutLabel.setAttribute('for', '4');
-                    aboutLabel.setAttribute('id', 'tabRight');
+                    aboutLabel.setAttribute('id', 'tabAbout');
                         aboutLabel.innerHTML = 'About';
 
     jobs.setAttribute('class', 'footer-nav');
@@ -73,10 +73,15 @@ const pageLoad = () => { //loads all html elements into the content div of index
         home.after(homeLabel);
     homeLabel.after(menu);
         menu.after(menuLabel);
-    menuLabel.after(contact);
-        contact.after(contactLabel);
-    contactLabel.after(about);
+
+        menuLabel.after(about);
         about.after(aboutLabel);
+        aboutLabel.after(contact);
+        contact.after(contactLabel);
+    // menuLabel.after(contact);
+    //     contact.after(contactLabel);
+    // contactLabel.after(about);
+    //     about.after(aboutLabel);
 
     footer.appendChild(jobs);
     jobs.after(services);
@@ -96,6 +101,10 @@ const createTabs = () => {
         tabHome.setAttribute('class', 'tabDisp');
         tabHome.appendChild(title);
         title.after(img);
+        let subtext = document.createElement('h2');
+        subtext.setAttribute('id', 'subtext');
+        subtext.innerHTML = '"The best BBQ west of Memphis"'
+        img.after(subtext);
 
     let menuTitle = document.createElement('h1');
         menuTitle.setAttribute('id', 'title');
@@ -113,6 +122,10 @@ const createTabs = () => {
         tabContact.setAttribute('id', 'tab3');
         tabContact.setAttribute('class', 'tabDisp');
         tabContact.appendChild(contactTitle);
+    let details = document.createElement('p');
+    details.setAttribute('id', 'details');
+    details.innerHTML = "Phone: &nbsp&nbsp (512) 327-1742<br/><br/>Address: 6500 W. Bee Cave Rd.<br/>   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   Austin, TX 78746<br/><br/>Email: &nbsp&nbsp akhosbbq@gmail.com "
+    contactTitle.after(details);
 
     let aboutTitle = document.createElement('h1');
         aboutTitle.setAttribute('id', 'title');
@@ -121,11 +134,15 @@ const createTabs = () => {
         tabAbout.setAttribute('id', 'tab4');
         tabAbout.setAttribute('class', 'tabDisp');
         tabAbout.appendChild(aboutTitle);
+    let aboutText = document.createElement('p');
+    let aboutImg = document.createElement('img');
+    aboutImg.setAttribute('src', 'https://i.ibb.co/JjJ7886/smoker.jpg');
+    aboutImg.setAttribute('id', 'aboutImg')
+        aboutText.setAttribute('id', 'aboutText');
+        aboutText.innerHTML = 'When our founder, DiosAkhilleus, was a young lad, he worked every day with his father to try and make better smoked meats than the previous day. He did this every day until he reached the age of 18, at which point he took over his father\'s smokehouse and made a restaurant from it. This is that restaurant.';
+    aboutTitle.after(aboutImg);
+    aboutImg.after(aboutText);
 
-        // header.after(tabHome);
-        // header.after(tabMenu);
-        // header.after(tabContact);
-        // header.after(tabAbout);
         document.getElementById('main').appendChild(tabHome);
         document.getElementById('main').appendChild(tabMenu);
         document.getElementById('main').appendChild(tabContact);
